@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - SuccessFollow</title>
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Orbitron:wght@700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container animate-item" style="animation-delay: 0.2s;">
+                    <img src="/public/img/proje-logo.png" alt="BE FIT BE STRONGER Logo" class="logo-img">
+                    <a href="../index.html" class="logo-text">successFollow</a>
+                </div>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item animate-item" style="animation-delay: 0.4s;"><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 0.6s;"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 0.8s;"><a href="misyonumuz.html" class="nav-link">Misyonumuz</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 1.0s;"><a href="kilo-takip.html" class="nav-link">Kilo Takip</a></li>
+                </ul>
+                
+                <div class="login-section animate-item" style="animation-delay: 1.2s;">
+                    <a href="login.html" class="login-btn active">
+                        <i class="fas fa-user"></i> Giriş Yap
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-main">
+        <div class="login-container">
+            <div class="login-side-panel">
+                <div class="side-content">
+                    <img src="/public/img/proje-logo.png" alt="SuccessFollow Logo" class="login-logo">
+                    <h2 class="side-title">HEDEFLERİNİ TAKİP ET</h2>
+                    <p class="side-text">Fitness yolculuğunda ilerlemeyi kolaylaştır. Tek tıkla giriş yap, antrenmana devam et!</p>
+                    <div class="side-graphics">
+                        <div class="animated-graph">
+                            <div class="graph-bar" style="height: 40%; animation-delay: 0.1s;"></div>
+                            <div class="graph-bar" style="height: 65%; animation-delay: 0.2s;"></div>
+                            <div class="graph-bar" style="height: 45%; animation-delay: 0.3s;"></div>
+                            <div class="graph-bar" style="height: 80%; animation-delay: 0.4s;"></div>
+                            <div class="graph-bar" style="height: 60%; animation-delay: 0.5s;"></div>
+                        </div>
+                    </div>
+                    <p class="testimonial">"SuccessFollow ile son 3 ayda tüm fitness hedeflerime ulaştım!"</p>
+                </div>
+            </div>
+            
+            <div class="login-form-container">
+                <div class="login-tabs">
+                    <button class="tab-btn active" data-tab="login">Giriş Yap</button>
+                    <button class="tab-btn" data-tab="register">Kayıt Ol</button>
+                </div>
+                
+                <div class="login-card" id="login-tab">
+                    <div class="form-header">
+                        <h2>Hoş Geldiniz</h2>
+                        <p>Hesabınıza giriş yapın ve yolculuğunuza devam edin!</p>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google ile giriş yap</span>
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook ile giriş yap</span>
+                        </button>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>veya e-posta ile giriş yapın</span>
+                    </div>
+                    
+                    <form class="login-form" id="login-form">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="email" placeholder="E-posta adresiniz" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="password" placeholder="Şifreniz" required>
+                                <span class="focus-border"></span>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="remember-me">
+                                <input type="checkbox" id="remember">
+                                <label for="remember">Beni hatırla</label>
+                            </div>
+                            <a href="#" class="forgot-password">
+                                <span class="fish-icon">🐟</span>
+                                <span class="forgot-text">Şifremi unuttum</span>
+                                <span class="fish-tooltip">Balık hafızalı mısınız?</span>
+                            </a>
+                        </div>
+                        
+                        <button type="submit" class="login-submit-btn">
+                            <span class="btn-text">Giriş Yap</span>
+                            <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="login-card hidden" id="register-tab">
+                    <div class="form-header">
+                        <h2>Aramıza Katılın</h2>
+                        <p>Sadece birkaç adımda kayıt olun ve hemen başlayın!</p>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google ile kayıt ol</span>
+                        </button>
+                        <button class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook ile kayıt ol</span>
+                        </button>
+                    </div>
+                    
+                    <div class="divider">
+                        <span>veya e-posta ile kayıt olun</span>
+                    </div>
+                    
+                    <form class="login-form" id="register-form">
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="reg-email" placeholder="E-posta adresiniz" required>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="reg-password" placeholder="Şifreniz" required>
+                                <span class="focus-border"></span>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-with-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="confirm-password" placeholder="Şifrenizi tekrar girin" required>
+                                <span class="focus-border"></span>
+                                <button type="button" class="toggle-password">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-options">
+                            <div class="terms-agree">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">
+                                    <a href="#">Kullanım şartları</a> ve <a href="#">Gizlilik politikasını</a> kabul ediyorum
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="login-submit-btn">
+                            <span class="btn-text">Kayıt Ol</span>
+                            <span class="btn-icon"><i class="fas fa-user-plus"></i></span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="floating-particles">
+                    <div class="particle particle1"></div>
+                    <div class="particle particle2"></div>
+                    <div class="particle particle3"></div>
+                    <div class="particle particle4"></div>
+                    <div class="particle particle5"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Başlangıç -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Alanı -->
+            <div class="footer-logo">
+                <img src="/public/img/proje-logo-2.png" alt="SuccessFollow Logo">
+                <h3><span class="success">success</span><span class="follow">Follow</span></h3>
+            </div>
+            
+            <!-- Menüler -->
+            <div class="footer-column">
+                <h4 class="footer-title">SUCCESSFOLLOW</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="misyonumuz.html">Misyonumuz</a></li>
+                    <li><a href="kilo-takip.html">Kilo Takip</a></li>
+                </ul>
+            </div>
+            
+            <!-- Uygulama İndir -->
+            <div class="footer-column">
+                <h4 class="footer-title">UYGULAMAYI İNDİR</h4>
+                <p class="footer-text">Uygulamamızla daha hızlı alışveriş yapın. iOS ve Android için kullanılabilir.</p>
+                <div class="app-download">
+                    <a href="#" class="app-btn">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan İndir">
+                    </a>
+                    <a href="#" class="app-btn">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png" alt="Google Play'den İndir" class="google-play-badge">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- İletişimde Kalalım -->
+        <div class="social-container">
+            <h4 class="footer-title">İLETİŞİMDE KALALIM</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/eraykaxd/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/eraykn" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <!-- Alt Kısım -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 SUCCESSFOLLOW. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="/public/js/login.js"></script>
+</body>
+</html>

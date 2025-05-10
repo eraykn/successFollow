@@ -1,0 +1,118 @@
+/* Hakkımızda Sayfası Özel Stiller */
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 120px auto 50px;
+    padding: 0 20px;
+}
+
+.about-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 100px;
+    height: 5px;
+    background-color: #e91e63;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.about-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.mission-link {
+    color: #e91e63;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.mission-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #e91e63;
+    transition: width 0.3s ease;
+}
+
+.mission-link:hover {
+    color: #c2185b;
+}
+
+.mission-link:hover::after {
+    width: 100%;
+}
+
+/* Animasyon */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive tasarım */
+@media screen and (max-width: 768px) {
+    .content-container {
+        margin-top: 100px;
+    }
+    
+    .about-section {
+        padding: 25px 20px;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    
+    .about-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}

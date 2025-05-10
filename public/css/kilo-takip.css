@@ -1,0 +1,143 @@
+/* Kilo Takip Sayfası Stilleri */
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 120px auto 50px;
+    padding: 0 20px;
+}
+
+.page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    width: 100px;
+    height: 5px;
+    background-color: #e91e63;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.exercise-card {
+    width: 340px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #f8f8f8;
+}
+
+.exercise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.exercise-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+}
+
+.exercise-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.exercise-card:hover .exercise-img {
+    transform: scale(1.1);
+}
+
+.exercise-title {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.exercise-card.loading {
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Sayfaya özel animasyonlar */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive tasarım */
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    
+    .exercise-card {
+        width: 300px;
+        height: 180px;
+    }
+    
+    .exercise-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .exercise-card {
+        width: 100%;
+        height: 160px;
+    }
+    
+    .exercise-title {
+        font-size: 1.5rem;
+    }
+}

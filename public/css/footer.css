@@ -1,0 +1,266 @@
+/* Footer Genel Stil */
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 50px 0 0 0;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden; /* Taşan içerikleri gizle */
+    position: relative;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Logo Alanı - BÜYÜTÜLMÜŞ LOGO */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer-logo img {
+    max-width: 120px; /* Logo boyutu büyütüldü (önceki: 70px) */
+    height: auto;
+    margin-bottom: 15px; /* Biraz daha büyük margin */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.05);
+}
+
+.footer-logo h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #e91e63, #ff9a9e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 5px;
+}
+
+.footer-logo h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, #e91e63, transparent);
+    border-radius: 3px;
+}
+
+.footer-logo h3::before {
+    content: 'S';
+    position: absolute;
+    font-size: 1.2em;
+    left: 0;
+    top: -5px;
+    color: #e91e63;
+    opacity: 0.7;
+    transform: rotate(-10deg);
+    text-shadow: none;
+    z-index: -1;
+}
+
+.footer-logo h3 .success {
+    font-weight: 900;
+}
+
+.footer-logo h3 .follow {
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Footer Sütunları */
+.footer-column {
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #e91e63;
+    border-radius: 3px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links a:hover {
+    color: #e91e63;
+    transform: translateX(5px);
+}
+
+.footer-links a::before {
+    content: '›';
+    margin-right: 8px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateX(-5px);
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Uygulama İndir Bölümü */
+.footer-text {
+    color: #b3b3b3;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-btn {
+    display: block;
+    transition: transform 0.3s;
+}
+
+.app-btn:hover {
+    transform: translateY(-3px);
+}
+
+.app-btn img {
+    height: 40px;
+}
+
+.google-play-badge {
+    height: 60px !important; 
+    margin-top: -10px;
+}
+
+/* Sosyal Medya Bölümü */
+.social-container {
+    background-color: #121212;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.social-icon:hover {
+    background-color: #e91e63;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
+/* Alt Kısım */
+.footer-bottom {
+    background-color: #0a0a0a;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+/* Kırmızı çerçeve içindeki öğenin kaldırılması */
+.footer-nav-buttons,
+.footer-toggle-buttons {
+    display: none; /* Footer'daki gezinme düğmelerini gizle */
+}
+
+/* Duyarlı Tasarım */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .footer-links a {
+        justify-content: center;
+    }
+    
+    .app-download {
+        align-items: center;
+    }
+    
+    /* Mobil cihazlarda logo boyutu */
+    .footer-logo img {
+        max-width: 100px;
+    }
+}

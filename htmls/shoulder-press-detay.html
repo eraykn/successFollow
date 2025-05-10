@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoulder Press Takip - SuccessFollow</title>
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700,800,900&family=Orbitron:wght@700&family=Raleway:wght@400,500,600,700,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container animate-item" style="animation-delay: 0.2s;">
+                    <img src="/public/img/proje-logo.png" alt="BE FIT BE STRONGER Logo" class="logo-img">
+                    <a href="../index.html" class="logo-text">successFollow</a>
+                </div>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item animate-item" style="animation-delay: 0.4s;"><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 0.6s;"><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 0.8s;"><a href="misyonumuz.html" class="nav-link">Misyonumuz</a></li>
+                    <li class="nav-item animate-item" style="animation-delay: 1.0s;"><a href="kilo-takip.html" class="nav-link active">Kilo Takip</a></li>
+                </ul>
+                
+                <div class="login-section animate-item" style="animation-delay: 1.2s;">
+                    <a href="login.html" class="login-btn">
+                        <i class="fas fa-user"></i> Giriş Yap
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="content-container">
+        <div class="exercise-header">
+            <a href="kilo-takip.html" class="back-button"><i class="fas fa-arrow-left"></i> Geri</a>
+            <h1 class="page-title">Shoulder Press İlerleme Takibi</h1>
+        </div>
+
+        <div class="workout-container">
+            <div class="chart-container">
+                <canvas id="weightChart"></canvas>
+            </div>
+
+            <div class="input-container">
+                <h2 class="input-title">Yeni Kayıt Ekle</h2>
+                <form id="weight-form">
+                    <div class="form-group">
+                        <label for="workout-date">Tarih</label>
+                        <input type="date" id="workout-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="workout-weight">Kaldırılan Ağırlık (kg)</label>
+                        <input type="number" id="workout-weight" min="0" step="0.5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="workout-reps">Yapılan Tekrar Sayısı</label>
+                        <input type="number" id="workout-reps" min="1" step="1" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Kaydet</button>
+                </form>
+            </div>
+
+            <div class="history-container">
+                <h2 class="history-title">Geçmiş Kayıtlar</h2>
+                <div class="history-list" id="history-list">
+                    <!-- Kayıtlar JavaScript ile buraya eklenecek -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer Başlangıç -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo Alanı -->
+            <div class="footer-logo">
+                <img src="/public/img/proje-logo-2.png" alt="SuccessFollow Logo">
+                <h3>successFollow</h3>
+            </div>
+            
+            <!-- Menüler -->
+            <div class="footer-column">
+                <h4 class="footer-title">SUCCESSFOLLOW</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="misyonumuz.html">Misyonumuz</a></li>
+                    <li><a href="kilo-takip.html">Kilo Takip</a></li>
+                </ul>
+            </div>
+            <!-- Uygulama İndir -->
+            <div class="footer-column">
+                <h4 class="footer-title">UYGULAMAYI İNDİR</h4>
+                <p class="footer-text">Uygulamamızla daha hızlı alışveriş yapın. iOS ve Android için kullanılabilir.</p>
+                <div class="app-download">
+                    <a href="#" class="app-btn">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store'dan İndir">
+                    </a>
+                    <a href="#" class="app-btn">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/tr_badge_web_generic.png" alt="Google Play'den İndir" class="google-play-badge">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- İletişimde Kalalım -->
+        <div class="social-container">
+            <h4 class="footer-title">İLETİŞİMDE KALALIM</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/eraykaxd/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/eraykn" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="far fa-envelope"></i></a>
+            </div>
+        </div>
+        
+        <!-- Alt Kısım -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 SUCCESSFOLLOW. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    
+    <script src="/public/js/shoulder-press-detay.js"></script>
+</body>
+</html>
