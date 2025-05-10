@@ -1,10 +1,10 @@
 SuccessFollow Fitness Takip Uygulaması
 
-📋Proje Hakkında
+📋 Proje Hakkında
 SuccessFollow, kişisel fitness hedeflerinizi takip etmeniz, antrenmanlarınızı kaydetmeniz ve ilerlemenizi görsel olarak izlemeniz için tasarlanmış modern bir web uygulamasıdır. Kullanıcı dostu arayüzü ve kapsamlı özellikleriyle spor ve fitness yolculuğunuzu daha kolay ve motive edici hale getirir.
 
-🌟Amaç
-Bu projeyi, fitness hedeflerine ulaşmak isteyen ancak ilerlemeyi takip etmekte zorlanan kişiler için bir çözüm olarak geliştirdim. SuccessFollow ile kullanıcılar:
+🌟 Amaç
+Bu projeyi, fitness hedeflerine ulaşmak isteyen ancak ilerlemeyi takip etmekte zorlanan kişiler için bir çözüm olarak geliştirdik. SuccessFollow ile kullanıcılar:
 Egzersiz performanslarını düzenli olarak kaydedebilir
 Kilo değişimlerini takip edebilir
 Zaman içindeki gelişimlerini görsel grafiklerle gözlemleyebilir
@@ -24,6 +24,12 @@ Renk kodlamasıyla ilerleme ve gerileme durumlarının belirtilmesi
 Düzenli kilo girişi ve takibi
 Vücut ölçülerinin kaydedilmesi
 Hedeflerinizle karşılaştırmalı sonuçlar
+
+👤 Kullanıcı Yönetimi
+Kişiselleştirilmiş hesap oluşturma
+Güvenli giriş sistemi
+Kullanıcı profil yönetimi
+
 🛠️ Kullanılan Teknolojiler
 Frontend: HTML5, CSS3, JavaScript
 Grafikler: Chart.js
